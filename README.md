@@ -8,8 +8,8 @@ has been modified to use delays between SPI read transactions rather than SPIF
 flag checks.  This speeds up block reads from the SD Card by about 15%.
 
 Other minor tweaks were made to functions in the same file to synchronise the
-reading of the SPIF flag to just after the time it changes. (SPIF check loop
-only samples every 4 clock cycles)
+reading of the SPIF flag to just after the time it changes, (SPIF check loop
+only samples every 4 clock cycles) this speeds things up a little bit.
 
 This modification has been made to permit faster rendering of image files to TFT
 displays. When used in conjunction with TFT_ILI9341 a 320 x 240 image can be pulled
